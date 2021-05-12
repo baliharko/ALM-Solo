@@ -10,7 +10,7 @@ public class MathCalc {
         return a * b;
     }
 
-    public int divide(int a, int b) {
+    public double divide(double a, double b) {
         return a / b;
     }
 }
