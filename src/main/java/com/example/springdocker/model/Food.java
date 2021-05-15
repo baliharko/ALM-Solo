@@ -12,4 +12,8 @@ public class Food {
     String name;
     boolean delicious;
     boolean canICookIt;
+
+    public Food(String name) {
+        this.name = name;
+    }
 }

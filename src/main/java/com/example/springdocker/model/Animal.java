@@ -12,4 +12,8 @@ public class Animal {
     String name;
     boolean isMammal;
     boolean isFlying;
+
+    public Animal(String name) {
+        this.name = name;
+    }
  }
