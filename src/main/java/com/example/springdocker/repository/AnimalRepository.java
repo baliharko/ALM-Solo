@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface AnimalRepository extends MongoRepository<Animal, Long> {
 
-    List<Animal> findByFlying(boolean isFlying);
-    List<Animal> findByMammal(boolean isMammal);
+    List<Animal> findByFlying(boolean flying);
+    List<Animal> findByMammal(boolean mammal);
 }

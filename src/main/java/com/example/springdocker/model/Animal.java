@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 public class Animal {
     Long id;
     String name;
-    boolean isMammal;
-    boolean isFlying;
+    boolean mammal;
+    boolean flying;
 
     public Animal(String name) {
         this.name = name;
