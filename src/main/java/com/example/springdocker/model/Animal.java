@@ -8,12 +8,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Animal {
-    Long id;
+
+    String id;
     String name;
     boolean mammal;
     boolean flying;
 
     public Animal(String name) {
         this.name = name;
+    }
+
+    public Animal(String name, boolean mammal, boolean flying) {
+        this.name = name;
+        this.mammal = mammal;
+        this.flying = flying;
     }
  }
