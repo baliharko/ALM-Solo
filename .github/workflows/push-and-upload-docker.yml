@@ -30,8 +30,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/alm-solo:${{ github.run_number }}
-                ${{ secrets.DOCKERHUB_USERNAME }}/alm-solo:latest
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/alm-solo:${{ github.run_number }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/alm-solo:latest
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
