@@ -11,12 +11,12 @@ services:
   mongo-express:
     image: mongo-express
     ports:
-      - 9999:8081
+      - 8081:8081
     depends_on:
       - mongo
 
   java-app:
-    image: min-java-app
+    image: animals-java
     ports:
       - 8080:8080
     environment:

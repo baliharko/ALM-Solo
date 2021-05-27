@@ -11,7 +11,7 @@ services:
   mongo-express:
     image: mongo-express
     ports:
-      - 9999:8081
+      - 8081:8081
     depends_on:
       - mongo
 
